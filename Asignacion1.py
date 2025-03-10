@@ -1,15 +1,16 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[4]:
-
-
 # 🔹 Codigo final postulado
+import os
 import streamlit as st
 import numpy as np
 import pandas as pd
 from scipy.optimize import linprog
 import io
+
+# Instalar xlsxwriter si no está disponible
+os.system("pip install xlsxwriter")
 
 # Configuración de la app
 st.title("Optimización de Asignación de Productos")
